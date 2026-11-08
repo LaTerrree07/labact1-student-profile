@@ -3,7 +3,14 @@
 *.log
 *.pyc
 *.swp
+*.bak
+*.tmp
+*~
 .DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
 .atom/
 .build/
 .buildlog/
@@ -12,16 +19,21 @@
 .swiftpm/
 migrate_working_dir/
 
-# IntelliJ related
+# IntelliJ / Android Studio
 *.iml
 *.ipr
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
+# Visual Studio Code
 .vscode/
+
+# Other IDEs and editors
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
 
 # Local secrets and signing material
 .env
@@ -37,26 +49,34 @@ migrate_working_dir/
 credentials.json
 service-account*.json
 
-# Flutter/Dart/Pub related
+# Flutter / Dart / Pub related
 **/doc/api/
-**/ios/Flutter/.last_build_id
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
+pubspec-override.yaml
 /build/
 /coverage/
+
+# Android build caches and generated files
+**/.gradle/
+**/build/
+**/captures/
+**/GeneratedPluginRegistrant.java
+/android/app/debug
+/android/app/profile
+/android/app/release
+*.apk
+*.aab
 
 # Symbolication related
 app.*.symbols
 
 # Obfuscation related
 app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
 
 # Widget Preview related
 .widget_preview/
